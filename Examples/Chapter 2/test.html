@@ -2,7 +2,6 @@
 <html>
 <head>
     <script src="../../d3/d3.js"> </script>  
-    <script src="cities.csv"> </script>  
     <!-- <script src="tweets.json"> </script>  -->
     <script src="scripts.js"> </script>
 </head>
@@ -10,5 +9,17 @@
     <div id="someDiv" style="width: 200px; height: 100px; border: black 1px solid;">
         <input id="someCheckBox" type="checkbox" />
     </div>
+    <script>
+        // Data of sample.json file
+        // {
+        //     "place": "GeeksforGeeks",
+        //     "visitiors": "100M",
+        //     "target": "Client",
+        //     "source": "Server"
+        // }
+        d3.json("tweets.json", function (d) {
+            console.log(d);
+        });
+    </script>
 </body>
 </html>
